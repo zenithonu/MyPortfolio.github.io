@@ -1,0 +1,232 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: 'PT San', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 0 100px 0 100px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+body{
+    background-color: #252627;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar{
+    background-color: #181818;
+}
+header h1,
+header a,
+.text p,
+.about h1,
+.skills h1,
+.work h1,
+.contact h1{
+    color: #707070;
+}
+li{
+    list-style: none;
+    margin-left: 30px;
+}
+a{
+    text-decoration: wavy;
+    font-size: .9rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+}
+.main-info-section{
+    height: calc(100vh - 81.6px);
+}
+.text{
+    margin-top: 120px;
+}
+.text h1{
+    color: #fff;
+    font-size: 3rem;
+    cursor: context-menu;
+}
+.text p{
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    font-size: 8rem;
+}
+.text a{
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid #ED5565;
+    color: #ED5565;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    transition: 5s;
+    display: inline-block;
+}
+.text a:hover{
+    color: #fff;
+}
+.text a::before{
+    content: '';
+    background-color: #ED5565;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+.profile-image img{
+    width: 450px;
+    margin-top: 50px;
+}
+.about h1,
+.work h1{
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .1;
+}
+.about-me-info{
+    max-width: 900px;
+    background: #252627;
+    box-shadow: 0 0 1.2rem rgba(0,0,0, .25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.about-me-info p{
+    font-size: 1.3rem;
+    color: #BEBEBE;
+}
+.skills{
+    height: 100vh;
+}
+.skills h1,
+.contact h1{
+    text-align: right;
+    font-size: 10rem;
+    opacity: .1;
+}
+.skills-info{
+    font-size: 1.4rem;
+    max-width: 800px;
+    background: #BEBEBE;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    margin-bottom: 50%;
+}
+.html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+div[class^='tag-']{
+    clip-path: polygon(75% 0%,100% 50%,75% 100%, 0% 100%, 0% 50%,0% 0%);
+    width: 120px;
+    height: 30px;
+    background-color: #1785A7;
+    margin-right: 30px;
+}
+div[class^='tag-'] p{
+    color: #fff;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+div[class^='bar-']{
+    position: absolute;
+    background-color: #48cfad;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+}
+.work-category button{
+    text-transform: capitalize;
+    border: 3px solid #ED5565;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #ED5565;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background: #252627;
+    outline: none;
+    cursor: pointer;
+}
+div[class^='category-']{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,nimax(350px,lfr));
+    grid-gap: 20px;
+}
+.work a{
+    justify-self: center;
+    position: relative;
+    display: inline-block;
+}
+.work-category .active{
+    background-color: #ED5565;
+}
+button.active{
+    color: #fff;
+}
+.contact{
+    margin-top: 50px;
+}
+form input,
+form textarea{
+    display: block;
+    width: 500px;
+    padding: 20px;
+    background-color: #252627;
+    border: 3px solid #707070;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    left: 50px;
+    right: 50px;
+    transform: translateX(-50px);
+}
+form input:last-child{
+    width: 150px;
+    background-color: #ED5565;
+    border: none;
+    cursor: pointer;
+}
+footer hr{
+    border: 2px solid #707070;
+    margin-top: 80px;
+}
+footer p{
+    text-align: center;
+    color: #707070;
+    font-size: 1.2rem;
+    padding: 30px 0;
+}
+
